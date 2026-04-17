@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/LENOVO/Desktop/code-2 -type f -name \"requirements.txt\" -exec cat {} \\\\;)",
+      "Bash(wc -l /c/Users/LENOVO/Desktop/code-2/backend/*.py /c/Users/LENOVO/Desktop/code-2/tls/*.py /c/Users/LENOVO/Desktop/code-2/ns3_sim/*.py)",
+      "Bash(ls -lah /c/Users/LENOVO/Desktop/code-2/*.md /c/Users/LENOVO/Desktop/code-2/*.py)",
+      "Bash(python -m pytest tests/test_ns3_sim.py tests/test_tls.py -v --tb=short)"
+    ]
+  }
+}

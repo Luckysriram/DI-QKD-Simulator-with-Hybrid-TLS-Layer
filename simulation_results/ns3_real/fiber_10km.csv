@@ -1,0 +1,2 @@
+scenario,distance_km,qber,key_rate,tx_prob,eve_present,intercept_rate,is_secure,throughput_mbps,avg_delay_ms,packet_loss_rate,packets_sent,packets_recv,jitter_ms,tls_handshake_ms,tls_data_transfer_ms
+fiber_10km,10.00000000,0.04758129,0.01413141,0.06309573,0,0.00000000,1,183.7952,0.0917,0.0000,925519,924935,0.0051,4.4003,0.0800

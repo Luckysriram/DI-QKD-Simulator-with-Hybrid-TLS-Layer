@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-04-16T16:40:27.077921",
+  "simulation_params": {
+    "key_size": 512,
+    "chsh_rounds": 1000,
+    "chsh_state_type": "entangled"
+  },
+  "execution_log": [
+    "[16:40:27] ============================================================",
+    "[16:40:27] Starting Full DI-QKD Simulation",
+    "[16:40:27] ============================================================",
+    "[16:40:27] Starting BB84 protocol execution",
+    "[16:40:27] Alice prepared 512 quantum states",
+    "[16:40:27] Bob measured quantum states",
+    "[16:40:27] Sifted key length: 258 bits (efficiency: 50.39%)",
+    "[16:40:27] QBER (Quantum Bit Error Rate): 0.0000",
+    "[16:40:27] Final key length after privacy amplification: 113 bits",
+    "[16:40:27] Eve eavesdropping simulation - Detected: True",
+    "[16:40:27] Starting CHSH Bell test with entangled state",
+    "[16:40:27] Created maximally entangled Bell state |\u03a6+\u27e9",
+    "[16:40:27] Completed 1000 CHSH measurements",
+    "[16:40:27] CHSH value: 0.0831",
+    "[16:40:27] Bell violation: False",
+    "[16:40:27] Device-independent certified: False",
+    "[16:40:27] Combined key from BB84 and CHSH: 113 bits",
+    "[16:40:27] ============================================================",
+    "[16:40:27] DI-QKD Simulation Completed",
+    "[16:40:27] ============================================================"
+  ],
+  "key_statistics": {
+    "input_bits": 512,
+    "sifted_key_length": 258,
+    "final_key_length": 113,
+    "combined_key_length": 113
+  },
+  "security_certification": {
+    "overall_security_level": "Medium-High",
+    "bb84_secure": true,
+    "eve_detected": true,
+    "device_independent_certified": false,
+    "di_robustness": "Failed",
+    "quantum_advantage": false,
+    "key_size": 113,
+    "recommendations": [
+      "No Bell violation - cannot certify device-independent security",
+      "Generated key is small - consider running with larger parameters"
+    ]
+  },
+  "bb84_statistics": {
+    "total_bits_sent": 512,
+    "sifted_key_length": 258,
+    "sift_ratio": 0.50390625,
+    "bases_matched": 258,
+    "measurement_bases_used": 2
+  },
+  "chsh_correlations": {
+    "E(0,0)": 0.007575757575757576,
+    "E(0,1)": 0.0,
+    "E(1,0)": -0.027888446215139442,
+    "E(1,1)": 0.06276150627615062
+  }
+}

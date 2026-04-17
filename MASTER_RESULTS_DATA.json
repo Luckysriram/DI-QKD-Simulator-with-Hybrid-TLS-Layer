@@ -1,0 +1,846 @@
+{
+  "diqkd_recent": {
+    "timestamp": "2026-04-13T11:18:16.615098",
+    "simulation_params": {
+      "key_size": 512,
+      "chsh_rounds": 1000,
+      "chsh_state_type": "entangled"
+    },
+    "execution_log": [
+      "[11:18:16] ============================================================",
+      "[11:18:16] Starting Full DI-QKD Simulation",
+      "[11:18:16] ============================================================",
+      "[11:18:16] Starting BB84 protocol execution",
+      "[11:18:16] Alice prepared 512 quantum states",
+      "[11:18:16] Bob measured quantum states",
+      "[11:18:16] Sifted key length: 268 bits (efficiency: 52.34%)",
+      "[11:18:16] QBER (Quantum Bit Error Rate): 0.0000",
+      "[11:18:16] Final key length after privacy amplification: 118 bits",
+      "[11:18:16] Eve eavesdropping simulation - Detected: True",
+      "[11:18:16] Starting CHSH Bell test with entangled state",
+      "[11:18:16] Created maximally entangled Bell state |\u03a6+\u27e9",
+      "[11:18:16] Completed 1000 CHSH measurements",
+      "[11:18:16] CHSH value: 0.0022",
+      "[11:18:16] Bell violation: False",
+      "[11:18:16] Device-independent certified: False",
+      "[11:18:16] Combined key from BB84 and CHSH: 118 bits",
+      "[11:18:16] ============================================================",
+      "[11:18:16] DI-QKD Simulation Completed",
+      "[11:18:16] ============================================================"
+    ],
+    "key_statistics": {
+      "input_bits": 512,
+      "sifted_key_length": 268,
+      "final_key_length": 118,
+      "combined_key_length": 118
+    },
+    "security_certification": {
+      "overall_security_level": "Medium-High",
+      "bb84_secure": true,
+      "eve_detected": true,
+      "device_independent_certified": false,
+      "di_robustness": "Failed",
+      "quantum_advantage": false,
+      "key_size": 118,
+      "recommendations": [
+        "No Bell violation - cannot certify device-independent security",
+        "Generated key is small - consider running with larger parameters"
+      ]
+    },
+    "bb84_statistics": {
+      "total_bits_sent": 512,
+      "sifted_key_length": 268,
+      "sift_ratio": 0.5234375,
+      "bases_matched": 268,
+      "measurement_bases_used": 2
+    },
+    "chsh_correlations": {
+      "E(0,0)": -0.08196721311475409,
+      "E(0,1)": 0.03734439834024896,
+      "E(1,0)": 0.026415094339622643,
+      "E(1,1)": -0.016
+    }
+  },
+  "diqkd_previous": {
+    "timestamp": "2026-03-25T19:41:49.041403",
+    "simulation_params": {
+      "key_size": 512,
+      "chsh_rounds": 1000,
+      "chsh_state_type": "entangled"
+    },
+    "execution_log": [
+      "[19:41:49] ============================================================",
+      "[19:41:49] Starting Full DI-QKD Simulation",
+      "[19:41:49] ============================================================",
+      "[19:41:49] Starting BB84 protocol execution",
+      "[19:41:49] Alice prepared 512 quantum states",
+      "[19:41:49] Bob measured quantum states",
+      "[19:41:49] Sifted key length: 239 bits (efficiency: 46.68%)",
+      "[19:41:49] QBER (Quantum Bit Error Rate): 0.0000",
+      "[19:41:49] Final key length after privacy amplification: 103 bits",
+      "[19:41:49] Eve eavesdropping simulation - Detected: True",
+      "[19:41:49] Starting CHSH Bell test with entangled state",
+      "[19:41:49] Created maximally entangled Bell state |\u03a6+\u27e9",
+      "[19:41:49] Completed 1000 CHSH measurements",
+      "[19:41:49] CHSH value: 0.0528",
+      "[19:41:49] Bell violation: False",
+      "[19:41:49] Device-independent certified: False",
+      "[19:41:49] Combined key from BB84 and CHSH: 103 bits",
+      "[19:41:49] ============================================================",
+      "[19:41:49] DI-QKD Simulation Completed",
+      "[19:41:49] ============================================================"
+    ],
+    "key_statistics": {
+      "input_bits": 512,
+      "sifted_key_length": 239,
+      "final_key_length": 103,
+      "combined_key_length": 103
+    },
+    "security_certification": {
+      "overall_security_level": "Medium-High",
+      "bb84_secure": true,
+      "eve_detected": true,
+      "device_independent_certified": false,
+      "di_robustness": "Failed",
+      "quantum_advantage": false,
+      "key_size": 103,
+      "recommendations": [
+        "No Bell violation - cannot certify device-independent security",
+        "Generated key is small - consider running with larger parameters"
+      ]
+    },
+    "bb84_statistics": {
+      "total_bits_sent": 512,
+      "sifted_key_length": 239,
+      "sift_ratio": 0.466796875,
+      "bases_matched": 239,
+      "measurement_bases_used": 2
+    },
+    "chsh_correlations": {
+      "E(0,0)": 0.05785123966942149,
+      "E(0,1)": 0.040983606557377046,
+      "E(1,0)": -0.06563706563706563,
+      "E(1,1)": -0.0196078431372549
+    }
+  },
+  "ns3_real_all": {
+    "fiber_10km": [
+      {
+        "scenario": "fiber_10km",
+        "distance_km": 10.0,
+        "qber": 0.04758129,
+        "key_rate": 0.01413141,
+        "tx_prob": 0.06309573,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": true,
+        "throughput_mbps": 183.7952,
+        "avg_delay_ms": 0.0917,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 925519,
+        "packets_recv": 924935,
+        "jitter_ms": 0.0051,
+        "tls_handshake_ms": 4.4003,
+        "tls_data_transfer_ms": 0.08
+      }
+    ],
+    "fiber_50km": [
+      {
+        "scenario": "fiber_50km",
+        "distance_km": 50.0,
+        "qber": 0.19673467,
+        "key_rate": 0.0,
+        "tx_prob": 0.01,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 183.7951,
+        "avg_delay_ms": 0.0917,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 925519,
+        "packets_recv": 924935,
+        "jitter_ms": 0.0051,
+        "tls_handshake_ms": 4.4015,
+        "tls_data_transfer_ms": 0.0803
+      }
+    ],
+    "fiber_100km": [
+      {
+        "scenario": "fiber_100km",
+        "distance_km": 100.0,
+        "qber": 0.31606028,
+        "key_rate": 0.0,
+        "tx_prob": 0.001,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 183.7949,
+        "avg_delay_ms": 0.0917,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 925516,
+        "packets_recv": 924932,
+        "jitter_ms": 0.0051,
+        "tls_handshake_ms": 4.403,
+        "tls_data_transfer_ms": 0.0805
+      }
+    ],
+    "satellite_leo": [
+      {
+        "scenario": "satellite_leo",
+        "distance_km": 600.0,
+        "qber": 0.49876062,
+        "key_rate": 0.0,
+        "tx_prob": 0.015,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 26.3523,
+        "avg_delay_ms": 1.0682,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 135770,
+        "packets_recv": 135683,
+        "jitter_ms": 0.0287,
+        "tls_handshake_ms": 4.418,
+        "tls_data_transfer_ms": 0.803
+      }
+    ],
+    "eve_attack": [
+      {
+        "scenario": "eve_attack",
+        "distance_km": 20.0,
+        "qber": 0.09063462,
+        "key_rate": 0.00244499,
+        "tx_prob": 0.03981072,
+        "eve_present": true,
+        "intercept_rate": 0.0,
+        "is_secure": true,
+        "throughput_mbps": 0.4161,
+        "avg_delay_ms": 0.0008,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 4005,
+        "packets_recv": 4003,
+        "jitter_ms": 0.0,
+        "tls_handshake_ms": 4.4006,
+        "tls_data_transfer_ms": 0.0801
+      },
+      {
+        "scenario": "eve_attack",
+        "distance_km": 20.0,
+        "qber": 0.11336876,
+        "key_rate": 0.0,
+        "tx_prob": 0.03981072,
+        "eve_present": true,
+        "intercept_rate": 0.1,
+        "is_secure": false,
+        "throughput_mbps": 0.4068,
+        "avg_delay_ms": 0.0008,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 4005,
+        "packets_recv": 3914,
+        "jitter_ms": 0.0,
+        "tls_handshake_ms": 4.4006,
+        "tls_data_transfer_ms": 0.0801
+      },
+      {
+        "scenario": "eve_attack",
+        "distance_km": 20.0,
+        "qber": 0.13610289,
+        "key_rate": 0.0,
+        "tx_prob": 0.03981072,
+        "eve_present": true,
+        "intercept_rate": 0.2,
+        "is_secure": false,
+        "throughput_mbps": 245.0444,
+        "avg_delay_ms": 0.0008,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 4004,
+        "packets_recv": 3810,
+        "jitter_ms": 0.0,
+        "tls_handshake_ms": 4.4006,
+        "tls_data_transfer_ms": 0.0801
+      },
+      {
+        "scenario": "eve_attack",
+        "distance_km": 20.0,
+        "qber": 0.15883703,
+        "key_rate": 0.0,
+        "tx_prob": 0.03981072,
+        "eve_present": true,
+        "intercept_rate": 0.3,
+        "is_secure": false,
+        "throughput_mbps": 0.3853,
+        "avg_delay_ms": 0.0008,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 4005,
+        "packets_recv": 3707,
+        "jitter_ms": 0.0,
+        "tls_handshake_ms": 4.4006,
+        "tls_data_transfer_ms": 0.0801
+      },
+      {
+        "scenario": "eve_attack",
+        "distance_km": 20.0,
+        "qber": 0.2043053,
+        "key_rate": 0.0,
+        "tx_prob": 0.03981072,
+        "eve_present": true,
+        "intercept_rate": 0.5,
+        "is_secure": false,
+        "throughput_mbps": 0.3629,
+        "avg_delay_ms": 0.0008,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 4005,
+        "packets_recv": 3492,
+        "jitter_ms": 0.0,
+        "tls_handshake_ms": 4.4006,
+        "tls_data_transfer_ms": 0.0801
+      },
+      {
+        "scenario": "eve_attack",
+        "distance_km": 20.0,
+        "qber": 0.24977356,
+        "key_rate": 0.0,
+        "tx_prob": 0.03981072,
+        "eve_present": true,
+        "intercept_rate": 0.7,
+        "is_secure": false,
+        "throughput_mbps": 0.3437,
+        "avg_delay_ms": 0.0008,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 4005,
+        "packets_recv": 3307,
+        "jitter_ms": 0.0,
+        "tls_handshake_ms": 4.4006,
+        "tls_data_transfer_ms": 0.0801
+      },
+      {
+        "scenario": "eve_attack",
+        "distance_km": 20.0,
+        "qber": 0.31797597,
+        "key_rate": 0.0,
+        "tx_prob": 0.03981072,
+        "eve_present": true,
+        "intercept_rate": 1.0,
+        "is_secure": false,
+        "throughput_mbps": 0.4778,
+        "avg_delay_ms": 0.0009,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 4003,
+        "packets_recv": 3062,
+        "jitter_ms": 0.0,
+        "tls_handshake_ms": 4.4006,
+        "tls_data_transfer_ms": 0.0801
+      }
+    ],
+    "distance_sweep": [
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 1.0,
+        "qber": 0.00497508,
+        "key_rate": 0.04343074,
+        "tx_prob": 0.09549926,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": true,
+        "throughput_mbps": 260.848,
+        "avg_delay_ms": 0.1041,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 648399,
+        "packets_recv": 647974,
+        "jitter_ms": 0.0067,
+        "tls_handshake_ms": 4.4,
+        "tls_data_transfer_ms": 0.08
+      },
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 5.0,
+        "qber": 0.02438529,
+        "key_rate": 0.02657817,
+        "tx_prob": 0.07943282,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": true,
+        "throughput_mbps": 260.8561,
+        "avg_delay_ms": 0.0984,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 648765,
+        "packets_recv": 648306,
+        "jitter_ms": 0.0066,
+        "tls_handshake_ms": 4.4001,
+        "tls_data_transfer_ms": 0.08
+      },
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 10.0,
+        "qber": 0.04758129,
+        "key_rate": 0.01413141,
+        "tx_prob": 0.06309573,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": true,
+        "throughput_mbps": 260.8529,
+        "avg_delay_ms": 0.0994,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 648719,
+        "packets_recv": 648264,
+        "jitter_ms": 0.0068,
+        "tls_handshake_ms": 4.4003,
+        "tls_data_transfer_ms": 0.08
+      },
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 20.0,
+        "qber": 0.09063462,
+        "key_rate": 0.00244499,
+        "tx_prob": 0.03981072,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": true,
+        "throughput_mbps": 260.8427,
+        "avg_delay_ms": 0.1063,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 648029,
+        "packets_recv": 647632,
+        "jitter_ms": 0.0067,
+        "tls_handshake_ms": 4.4006,
+        "tls_data_transfer_ms": 0.0801
+      },
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 30.0,
+        "qber": 0.12959089,
+        "key_rate": 0.0,
+        "tx_prob": 0.02511886,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 260.8448,
+        "avg_delay_ms": 0.1045,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 648313,
+        "packets_recv": 647891,
+        "jitter_ms": 0.0067,
+        "tls_handshake_ms": 4.4009,
+        "tls_data_transfer_ms": 0.0801
+      },
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 50.0,
+        "qber": 0.19673467,
+        "key_rate": 0.0,
+        "tx_prob": 0.01,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 104.9575,
+        "avg_delay_ms": 0.0725,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 262436,
+        "packets_recv": 262260,
+        "jitter_ms": 0.0034,
+        "tls_handshake_ms": 4.4015,
+        "tls_data_transfer_ms": 0.0803
+      },
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 75.0,
+        "qber": 0.26381672,
+        "key_rate": 0.0,
+        "tx_prob": 0.00316228,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 260.8544,
+        "avg_delay_ms": 0.0989,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 648887,
+        "packets_recv": 648416,
+        "jitter_ms": 0.0068,
+        "tls_handshake_ms": 4.4022,
+        "tls_data_transfer_ms": 0.0804
+      },
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 100.0,
+        "qber": 0.31606028,
+        "key_rate": 0.0,
+        "tx_prob": 0.001,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 131.2719,
+        "avg_delay_ms": 0.0768,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 328369,
+        "packets_recv": 328151,
+        "jitter_ms": 0.004,
+        "tls_handshake_ms": 4.403,
+        "tls_data_transfer_ms": 0.0805
+      },
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 150.0,
+        "qber": 0.38843492,
+        "key_rate": 0.0,
+        "tx_prob": 0.0001,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 260.8541,
+        "avg_delay_ms": 0.1064,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 648212,
+        "packets_recv": 647818,
+        "jitter_ms": 0.0066,
+        "tls_handshake_ms": 4.4045,
+        "tls_data_transfer_ms": 0.0808
+      },
+      {
+        "scenario": "distance_sweep",
+        "distance_km": 200.0,
+        "qber": 0.43233236,
+        "key_rate": 0.0,
+        "tx_prob": 1e-05,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 260.8524,
+        "avg_delay_ms": 0.102,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 648469,
+        "packets_recv": 648041,
+        "jitter_ms": 0.0067,
+        "tls_handshake_ms": 4.406,
+        "tls_data_transfer_ms": 0.081
+      }
+    ],
+    "tls_handshake": [
+      {
+        "scenario": "tls_handshake_1km",
+        "distance_km": 1.0,
+        "qber": 0.00497508,
+        "key_rate": 0.04343074,
+        "tx_prob": 0.09549926,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": true,
+        "throughput_mbps": 183.7953,
+        "avg_delay_ms": 0.0917,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 925519,
+        "packets_recv": 924935,
+        "jitter_ms": 0.005,
+        "tls_handshake_ms": 4.4,
+        "tls_data_transfer_ms": 0.08
+      },
+      {
+        "scenario": "tls_handshake_10km",
+        "distance_km": 10.0,
+        "qber": 0.04758129,
+        "key_rate": 0.01413141,
+        "tx_prob": 0.06309573,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": true,
+        "throughput_mbps": 260.8551,
+        "avg_delay_ms": 0.1002,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 1297137,
+        "packets_recv": 1296226,
+        "jitter_ms": 0.0067,
+        "tls_handshake_ms": 4.4003,
+        "tls_data_transfer_ms": 0.08
+      },
+      {
+        "scenario": "tls_handshake_50km",
+        "distance_km": 50.0,
+        "qber": 0.19673467,
+        "key_rate": 0.0,
+        "tx_prob": 0.01,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 182.8835,
+        "avg_delay_ms": 0.0847,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 910863,
+        "packets_recv": 910230,
+        "jitter_ms": 0.0051,
+        "tls_handshake_ms": 4.4015,
+        "tls_data_transfer_ms": 0.0803
+      },
+      {
+        "scenario": "tls_handshake_100km",
+        "distance_km": 100.0,
+        "qber": 0.31606028,
+        "key_rate": 0.0,
+        "tx_prob": 0.001,
+        "eve_present": false,
+        "intercept_rate": 0.0,
+        "is_secure": false,
+        "throughput_mbps": 259.461,
+        "avg_delay_ms": 0.1042,
+        "packet_loss_rate": 0.0,
+        "packets_sent": 1288582,
+        "packets_recv": 1287766,
+        "jitter_ms": 0.0067,
+        "tls_handshake_ms": 4.403,
+        "tls_data_transfer_ms": 0.0805
+      }
+    ]
+  },
+  "distance_sweep": {
+    "scenario": "distance_sweep",
+    "timestamp": "2026-04-16T15:27:13.690960",
+    "summary": {
+      "scenario": "distance_sweep",
+      "total_points": 30,
+      "duration_s": 0.8633,
+      "metrics": {
+        "distance_km": {
+          "count": 10,
+          "min": 1,
+          "max": 200,
+          "avg": 64.1,
+          "sum": 641
+        },
+        "key_rate": {
+          "count": 10,
+          "min": 0.0,
+          "max": 0.04342694,
+          "avg": 0.00865753,
+          "sum": 0.08657534
+        },
+        "qber": {
+          "count": 10,
+          "min": 0.00498029,
+          "max": 0.45813543,
+          "avg": 0.19239225,
+          "sum": 1.92392255
+        }
+      }
+    },
+    "data_points": [
+      {
+        "timestamp": 0.000732,
+        "metric": "distance_km",
+        "value": 1,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.000732,
+        "metric": "key_rate",
+        "value": 0.04342694,
+        "labels": {
+          "distance_km": "1"
+        }
+      },
+      {
+        "timestamp": 0.000732,
+        "metric": "qber",
+        "value": 0.00498029,
+        "labels": {
+          "distance_km": "1"
+        }
+      },
+      {
+        "timestamp": 0.000732,
+        "metric": "distance_km",
+        "value": 5,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.000732,
+        "metric": "key_rate",
+        "value": 0.02657557,
+        "labels": {
+          "distance_km": "5"
+        }
+      },
+      {
+        "timestamp": 0.000732,
+        "metric": "qber",
+        "value": 0.02439143,
+        "labels": {
+          "distance_km": "5"
+        }
+      },
+      {
+        "timestamp": 0.001259,
+        "metric": "distance_km",
+        "value": 10,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.001259,
+        "metric": "key_rate",
+        "value": 0.01412935,
+        "labels": {
+          "distance_km": "10"
+        }
+      },
+      {
+        "timestamp": 0.001259,
+        "metric": "qber",
+        "value": 0.04758884,
+        "labels": {
+          "distance_km": "10"
+        }
+      },
+      {
+        "timestamp": 0.001259,
+        "metric": "distance_km",
+        "value": 20,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.001259,
+        "metric": "key_rate",
+        "value": 0.00244348,
+        "labels": {
+          "distance_km": "20"
+        }
+      },
+      {
+        "timestamp": 0.001259,
+        "metric": "qber",
+        "value": 0.09064604,
+        "labels": {
+          "distance_km": "20"
+        }
+      },
+      {
+        "timestamp": 0.001259,
+        "metric": "distance_km",
+        "value": 30,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.001259,
+        "metric": "key_rate",
+        "value": 0.0,
+        "labels": {
+          "distance_km": "30"
+        }
+      },
+      {
+        "timestamp": 0.001259,
+        "metric": "qber",
+        "value": 0.12960821,
+        "labels": {
+          "distance_km": "30"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "distance_km",
+        "value": 50,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "key_rate",
+        "value": 0.0,
+        "labels": {
+          "distance_km": "50"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "qber",
+        "value": 0.19677483,
+        "labels": {
+          "distance_km": "50"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "distance_km",
+        "value": 75,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "key_rate",
+        "value": 0.0,
+        "labels": {
+          "distance_km": "75"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "qber",
+        "value": 0.26393309,
+        "labels": {
+          "distance_km": "75"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "distance_km",
+        "value": 100,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "key_rate",
+        "value": 0.0,
+        "labels": {
+          "distance_km": "100"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "qber",
+        "value": 0.31640191,
+        "labels": {
+          "distance_km": "100"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "distance_km",
+        "value": 150,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "key_rate",
+        "value": 0.0,
+        "labels": {
+          "distance_km": "150"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "qber",
+        "value": 0.39146247,
+        "labels": {
+          "distance_km": "150"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "distance_km",
+        "value": 200,
+        "labels": {}
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "key_rate",
+        "value": 0.0,
+        "labels": {
+          "distance_km": "200"
+        }
+      },
+      {
+        "timestamp": 0.001776,
+        "metric": "qber",
+        "value": 0.45813543,
+        "labels": {
+          "distance_km": "200"
+        }
+      }
+    ]
+  }
+}

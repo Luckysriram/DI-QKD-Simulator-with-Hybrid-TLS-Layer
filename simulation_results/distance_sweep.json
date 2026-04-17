@@ -1,0 +1,254 @@
+{
+  "scenario": "distance_sweep",
+  "timestamp": "2026-04-16T15:27:13.690960",
+  "summary": {
+    "scenario": "distance_sweep",
+    "total_points": 30,
+    "duration_s": 0.8633,
+    "metrics": {
+      "distance_km": {
+        "count": 10,
+        "min": 1,
+        "max": 200,
+        "avg": 64.1,
+        "sum": 641
+      },
+      "key_rate": {
+        "count": 10,
+        "min": 0.0,
+        "max": 0.04342694,
+        "avg": 0.00865753,
+        "sum": 0.08657534
+      },
+      "qber": {
+        "count": 10,
+        "min": 0.00498029,
+        "max": 0.45813543,
+        "avg": 0.19239225,
+        "sum": 1.92392255
+      }
+    }
+  },
+  "data_points": [
+    {
+      "timestamp": 0.000732,
+      "metric": "distance_km",
+      "value": 1,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.000732,
+      "metric": "key_rate",
+      "value": 0.04342694,
+      "labels": {
+        "distance_km": "1"
+      }
+    },
+    {
+      "timestamp": 0.000732,
+      "metric": "qber",
+      "value": 0.00498029,
+      "labels": {
+        "distance_km": "1"
+      }
+    },
+    {
+      "timestamp": 0.000732,
+      "metric": "distance_km",
+      "value": 5,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.000732,
+      "metric": "key_rate",
+      "value": 0.02657557,
+      "labels": {
+        "distance_km": "5"
+      }
+    },
+    {
+      "timestamp": 0.000732,
+      "metric": "qber",
+      "value": 0.02439143,
+      "labels": {
+        "distance_km": "5"
+      }
+    },
+    {
+      "timestamp": 0.001259,
+      "metric": "distance_km",
+      "value": 10,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.001259,
+      "metric": "key_rate",
+      "value": 0.01412935,
+      "labels": {
+        "distance_km": "10"
+      }
+    },
+    {
+      "timestamp": 0.001259,
+      "metric": "qber",
+      "value": 0.04758884,
+      "labels": {
+        "distance_km": "10"
+      }
+    },
+    {
+      "timestamp": 0.001259,
+      "metric": "distance_km",
+      "value": 20,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.001259,
+      "metric": "key_rate",
+      "value": 0.00244348,
+      "labels": {
+        "distance_km": "20"
+      }
+    },
+    {
+      "timestamp": 0.001259,
+      "metric": "qber",
+      "value": 0.09064604,
+      "labels": {
+        "distance_km": "20"
+      }
+    },
+    {
+      "timestamp": 0.001259,
+      "metric": "distance_km",
+      "value": 30,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.001259,
+      "metric": "key_rate",
+      "value": 0.0,
+      "labels": {
+        "distance_km": "30"
+      }
+    },
+    {
+      "timestamp": 0.001259,
+      "metric": "qber",
+      "value": 0.12960821,
+      "labels": {
+        "distance_km": "30"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "distance_km",
+      "value": 50,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "key_rate",
+      "value": 0.0,
+      "labels": {
+        "distance_km": "50"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "qber",
+      "value": 0.19677483,
+      "labels": {
+        "distance_km": "50"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "distance_km",
+      "value": 75,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "key_rate",
+      "value": 0.0,
+      "labels": {
+        "distance_km": "75"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "qber",
+      "value": 0.26393309,
+      "labels": {
+        "distance_km": "75"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "distance_km",
+      "value": 100,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "key_rate",
+      "value": 0.0,
+      "labels": {
+        "distance_km": "100"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "qber",
+      "value": 0.31640191,
+      "labels": {
+        "distance_km": "100"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "distance_km",
+      "value": 150,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "key_rate",
+      "value": 0.0,
+      "labels": {
+        "distance_km": "150"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "qber",
+      "value": 0.39146247,
+      "labels": {
+        "distance_km": "150"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "distance_km",
+      "value": 200,
+      "labels": {}
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "key_rate",
+      "value": 0.0,
+      "labels": {
+        "distance_km": "200"
+      }
+    },
+    {
+      "timestamp": 0.001776,
+      "metric": "qber",
+      "value": 0.45813543,
+      "labels": {
+        "distance_km": "200"
+      }
+    }
+  ]
+}
