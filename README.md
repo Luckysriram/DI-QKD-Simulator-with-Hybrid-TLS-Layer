@@ -399,6 +399,4 @@ For improvements and bug reports, please feel free to modify and extend the simu
 **Last Updated**: 2026-04-13
 **Version**: 2.0
 **Status**: Production Ready — TLS + NS-3 Integrated
-#   D I - Q K D - S i m u l a t o r - w i t h - H y b r i d - T L S - L a y e r  
- #   D I - Q K D - S i m u l a t o r - w i t h - H y b r i d - T L S - L a y e r  
- 
+#
